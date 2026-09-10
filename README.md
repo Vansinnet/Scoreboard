@@ -52,13 +52,5 @@ Scoreboard writes under `BepInEx/config/Scoreboard/`:
 
 Do not routinely delete client journals: their stream IDs are part of duplicate prevention. Back up data before manual changes. Unknown or corrupt formats are not silently replaced.
 
-## Development
-```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/Validate.ps1
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/Release.ps1
-```
-
-`config/paths.local.props` must point to a compatible local Valheim/BepInEx installation. See [Setup](docs/setup.md), [contracts](docs/contracts.md), [validation](docs/validation.md), and [release process](docs/release.md).
-
 ## License
 [MIT](LICENSE)
