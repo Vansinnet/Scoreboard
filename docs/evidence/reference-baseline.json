@@ -1,0 +1,16 @@
+{
+  "capturedUtc": "2026-09-10T21:04:00Z",
+  "steamBuild": "25185596",
+  "unity": "6000.0.75f1 (26349cd2a5c8)",
+  "references": [
+    { "location": "managed", "file": "assembly_valheim.dll", "assembly": "assembly_valheim, Version=0.0.0.0", "sha256": "A5130F5A957AB51CB6538F5412CBE57B43F927F4A679918BFF199B5C905D01BC" },
+    { "location": "managed", "file": "assembly_utils.dll", "assembly": "assembly_utils, Version=0.0.0.0", "sha256": "9333361C9D2A2A941C1E6D47E76220689FED1761DE8B5D123F7F42F26BE3132A" },
+    { "location": "managed", "file": "UnityEngine.dll", "assembly": "UnityEngine, Version=0.0.0.0", "sha256": "2F43705EBD2E3726BA06FB054BEA23C265F9168BF6D16CAD21789CDBE0E1B179" },
+    { "location": "managed", "file": "UnityEngine.CoreModule.dll", "assembly": "UnityEngine.CoreModule, Version=0.0.0.0", "sha256": "FBA3821AFB6867FE4D471DC50BF04BA21E6982B33AB6B5336B08A5C55119D990" },
+    { "location": "managed", "file": "UnityEngine.IMGUIModule.dll", "assembly": "UnityEngine.IMGUIModule, Version=0.0.0.0", "sha256": "6D79759136956F7E01F07E850905F9A8869CFD6987672CB85310AF35E510E109" },
+    { "location": "managed", "file": "UnityEngine.InputLegacyModule.dll", "assembly": "UnityEngine.InputLegacyModule, Version=0.0.0.0", "sha256": "DFC47973633481E2D7E4A310E4381B36B7CFF5A04C04F1D19E7D2395B82637B0" },
+    { "location": "managed", "file": "Newtonsoft.Json.dll", "assembly": "Newtonsoft.Json, Version=13.0.0.0", "sha256": "A56146202232958F46BD6A28B5A7DA166AEA123EE0D646735A46E5C341DFBF1F" },
+    { "location": "bepinex-core", "file": "BepInEx.dll", "assembly": "BepInEx, Version=5.4.23.3", "sha256": "E9AC3A950E91E71B13DF5480B36CE06AF27E981A688F0E62125B674D03A0713A" },
+    { "location": "bepinex-core", "file": "0Harmony.dll", "assembly": "0Harmony, Version=2.9.0.0", "sha256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031" }
+  ]
+}

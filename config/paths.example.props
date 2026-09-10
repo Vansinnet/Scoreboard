@@ -1,0 +1,10 @@
+<Project>
+  <!-- Copy this file to paths.local.props and update the machine-local paths. -->
+  <PropertyGroup>
+    <ValheimInstall>D:\Steam\steamapps\common\Valheim</ValheimInstall>
+    <ValheimManaged>$(ValheimInstall)\valheim_Data\Managed</ValheimManaged>
+    <BepInExRoot>$(ValheimInstall)\BepInEx</BepInExRoot>
+    <!-- Set this to the test profile's BepInEx/plugins/Scoreboard directory. -->
+    <ModDeployPath></ModDeployPath>
+  </PropertyGroup>
+</Project>
