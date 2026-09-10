@@ -4,7 +4,7 @@ Scoreboard is a BepInEx 5 mod that records per-world multiplayer statistics on t
 
 ## Status
 
-**0.1.0 is published as a GitHub prerelease.** The project builds cleanly and its aggregation/persistence logic is automatically tested. In-game host and dedicated-server acceptance remains pending; see [Manual testing](docs/manual-testing.md).
+**0.11.0 is published as a GitHub prerelease.** The project builds cleanly and its aggregation/persistence logic is automatically tested. In-game host and dedicated-server acceptance remains pending; see [Manual testing](docs/manual-testing.md).
 
 Built against:
 - Valheim Steam build `25185596`
@@ -14,8 +14,8 @@ Built against:
 
 ## Features
 - Server-owned storage separated by Valheim world and character ID.
-- Connected time, enemy kill credit, boss kill credit, and deaths.
-- F8 overlay with sorting and pagination.
+- Connected time, enemy kill credit, boss kill credit, deaths, crafting, building, item pickups, food eaten, portal use, travel, trees, mining, taming, and fishing.
+- F8 overlay with themed category views, sorting, and pagination.
 - One DLL for clients, listen-server hosts, and dedicated servers.
 - Persistent cumulative client journals with idempotent server high-water marks.
 - Explicit protocol negotiation, sender binding, rate limits, and bounded persistence.
@@ -33,6 +33,7 @@ Clients without Scoreboard may connect, but they cannot open the overlay and do 
 ## Controls
 - **F8:** show or hide Scoreboard.
 - **Left/Right:** change the sort column.
+- **Up/Down:** change statistic category.
 - **PageUp/PageDown:** change page.
 
 ## Statistic Semantics
@@ -40,6 +41,7 @@ Clients without Scoreboard may connect, but they cannot open the overlay and do 
 - **Kills:** changes to Valheim's `EnemyKills` profile statistic. This is game-defined kill credit, not necessarily the final hit.
 - **Bosses:** changes to Valheim's `BossKills` profile statistic.
 - **Deaths:** changes to Valheim's `Deaths` profile statistic.
+- **Crafts, builds, items, food, portals, distance, trees, mines, tames, and fish:** changes to their corresponding cumulative Valheim profile statistics.
 - Existing character totals from other worlds are not imported.
 
 Client counters are not independently verifiable by an unmodified Valheim server. Scoreboard is intended as a cooperative community summary, not a cheat-resistant competitive ranking. Character IDs are not authenticated account identities.
