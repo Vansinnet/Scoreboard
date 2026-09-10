@@ -22,8 +22,12 @@ $remoteHead = ($remoteLine -split '\s+')[0]
 if ($LASTEXITCODE -ne 0 -or $remoteHead -ne $head) { throw 'origin/main must match local HEAD.' }
 
 $tag = "v$Version"
+$previousErrorActionPreference = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
 & gh release view $tag --repo $repository 2>$null | Out-Null
-if ($LASTEXITCODE -eq 0) { throw "Release $tag already exists." }
+$releaseExists = $LASTEXITCODE -eq 0
+$ErrorActionPreference = $previousErrorActionPreference
+if ($releaseExists) { throw "Release $tag already exists." }
 
 & powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'Release.ps1')
 if ($LASTEXITCODE -ne 0) { throw 'Release build failed.' }
